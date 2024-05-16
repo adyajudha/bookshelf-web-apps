@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book List</h1>
+  </header>
+  <div class="wrapper">
+    <div class="container bg-white shadow" id="add-book">
+      <h2 class="container-header text-center">DAFTAR BUKU</h2>
+      <form class="form" action="#" id="form">
+        <div class="form-group form-title">
+          <label for="title">Tulis judul buku</label>
+          <input type="text" id="title" name="title" placeholder="Judul Buku" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="author">Masukkan nama penulis</label>
+          <input type="text" id="author" name="author" placeholder="Nama Penulis" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="year">Masukkan tahun terbit</label>
+          <input type="text" id="year" name="year" placeholder="Tahun Terbit" required>
+        </div>
+        <div class="form-group form-title">
+          <label for="complete-check">
+            <input type="checkbox" id="complete-check" name="complete-check">
+            Sudah selesai dibaca
+          </label>
+        </div>
+        <input type="submit" value="Submit" name="Submit" class="btn-submit">
+      </form>
+    </div>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Cari judul buku...">
+      <button id="search-button">Cari</button>
+    </div>
+    <div class="container">
+      <h2 class="container-header">Buku Yang Belum Selesai Dibaca</h2>
+      <div class="list-item" id="books">
+      </div>
+    </div>
+    <div class="container">
+      <h2 class="container-header">Buku Yang Sudah Selesai Dibaca</h2>
+      <div class="list-item" id="completed-books">
+      </div>
+    </div>
+  </div>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+</html>
